@@ -1,5 +1,7 @@
 # osuplus
 
+Fork using Chimu instead of Beatconnect
+
 A userscript to add features to your boring osu! web pages.
 
 ## [Changelog](CHANGELOG.md)
