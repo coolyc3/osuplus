@@ -619,7 +619,7 @@
                     $("<div>").append(
                         "<h2>Beatmaps page</h2>",
                         $("<table class='osuplusSettingsTable' width='100%'>").append(
-                            makeSettingRow("Show Beatconnect mirror", null, makeCheckboxOption("showMirror")),
+                            makeSettingRow("Show Chimu mirror", null, makeCheckboxOption("showMirror")),
                             makeSettingRow("Show Sayobot mirror", null, makeCheckboxOption("showMirror2")),
                             makeSettingRow("Show subscribe map", null, makeCheckboxOption("showSubscribeMap")),
                             makeSettingRow("Show dates", null, makeCheckboxOption("showDates")),
@@ -1953,7 +1953,7 @@ ${beatmapset.difficulties.map(function(beatmap){
                         </tr>
                         <tr>
                             <td colspan=4><a href=/d/${beatmap.beatmapset_id}>Download</a><br>
-                                <a href='https://beatconnect.io/b/${beatmap.beatmapset_id}'>Beatconnect mirror</a><br>
+                                <a href='https://chimu.moe/d/${beatmap.beatmapset_id}'>Chimu mirror</a><br>
                                 <a href='https://osu.sayobot.cn/home?search=${beatmap.beatmapset_id}' target='_blank'>Sayobot</a>
                             </td>
                         </tr>
@@ -2564,7 +2564,7 @@ ${beatmapset.difficulties.map(function(beatmap){
                         </tr>
                         <tr>
                           <td colspan=4><a href=/beatmapsets/${beatmap.beatmapset_id}/download>Download</a>
-                            <a href='https://beatconnect.io/b/${beatmap.beatmapset_id}'>Beatconnect mirror</a><br>
+                            <a href='https://chimu.moe/d/${beatmap.beatmapset_id}'>Chimu mirror</a><br>
                             <a href='https://osu.sayobot.cn/home?search=${beatmap.beatmapset_id}' target='_blank'>Sayobot</a>
                           </td>
                         </tr>
@@ -3184,7 +3184,7 @@ ${beatmapset.difficulties.map(function(beatmap){
             if(settings.showMirror){
                 if(mapsetID !== null){
                     $("#songinfo td").eq(-2).append(
-                        `<a href="https://beatconnect.io/b/${mapsetID}">Beatconnect Mirror</a><br>`
+                        `<a href="https://chimu.moe/d/${mapsetID}">Chimu Mirror</a><br>`
                     );
                 }
             }
@@ -4324,10 +4324,10 @@ ${beatmapset.difficulties.map(function(beatmap){
         function addMirrors(){
             if(settings.showMirror){
                 $(".beatmapset-header__buttons").append(
-                    `<a href="https://beatconnect.io/b/${jsonBeatmapset.id}" data-turbolinks="false" class="btn-osu-big btn-osu-big--beatmapset-header js-beatmapset-download-link">
+                    `<a href="https://chimu.moe/d/${jsonBeatmapset.id}" data-turbolinks="false" class="btn-osu-big btn-osu-big--beatmapset-header js-beatmapset-download-link">
                     <span class="btn-osu-big__content ">
                     <span class="btn-osu-big__left">
-                    <span class="btn-osu-big__text-top">Beatconnect mirror</span>
+                    <span class="btn-osu-big__text-top">Chimu mirror</span>
                     </span><span class="btn-osu-big__icon">
                     <span class="fa-fw"><i class="fas fa-download"></i></span></span></span></a>`
                 );
